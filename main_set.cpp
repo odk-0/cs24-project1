@@ -96,13 +96,13 @@ int main(int argv, char** argc){
     if(!bobFound) break;
   }
 
-  // Print final hands
-  cout << "Alice's final hand:";
-  for(const auto &c : alice) cout << ' ' << c;
+  // Print remaining cards (one per line) to match expected output format
   cout << endl;
-
-  cout << "Bob's final hand:";
-  for(const auto &c : bob) cout << ' ' << c;
+  cout << "Alice's cards:" << endl;
+  for(const auto &c : alice) cout << c << endl;
+  cout << endl;
+  cout << "Bob's cards:" << endl;
+  for(const auto &c : bob) cout << c << endl;
   cout << endl;
 
   return 0;

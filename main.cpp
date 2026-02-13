@@ -84,13 +84,17 @@ int main(int argv, char** argc){
   // play the game using CardList implementation
   playGame(alice, bob);
 
-  // Print final hands
-  std::cout << "Alice's final hand:";
-  alice.print(std::cout);
+  // Print remaining cards (one per line) to match expected output format
   std::cout << std::endl;
-
-  std::cout << "Bob's final hand:";
-  bob.print(std::cout);
+  std::cout << "Alice's cards:" << std::endl;
+  for (CardList::iterator it = alice.begin(); it != alice.end(); ++it) {
+    std::cout << *it << std::endl;
+  }
+  std::cout << std::endl;
+  std::cout << "Bob's cards:" << std::endl;
+  for (CardList::iterator it = bob.begin(); it != bob.end(); ++it) {
+    std::cout << *it << std::endl;
+  }
   std::cout << std::endl;
 
   return 0;
