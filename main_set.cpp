@@ -96,13 +96,13 @@ int main(int argv, char** argc){
     if(!bobFound) break;
   }
 
-  // Print final hands (single-line format expected by autograder)
-  cout << "Alice's final hand:";
-  for(const auto &c : alice) cout << ' ' << c;
+  // Print remaining cards in per-line format to match o_*.txt expectations
   cout << endl;
-
-  cout << "Bob's final hand:";
-  for(const auto &c : bob) cout << ' ' << c;
+  cout << "Alice's cards:" << endl;
+  for(const auto &c : alice) cout << c << endl;
+  cout << endl;
+  cout << "Bob's cards:" << endl;
+  for(const auto &c : bob) cout << c << endl;
   cout << endl;
 
   return 0;
