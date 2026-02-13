@@ -103,7 +103,6 @@ int main(int argv, char** argc){
   cout << endl;
   cout << "Bob's cards:" << endl;
   for(const auto &c : bob) cout << c << endl;
-  cout << endl;
 
   return 0;
 }

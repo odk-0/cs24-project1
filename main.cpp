@@ -95,7 +95,6 @@ int main(int argv, char** argc){
   for (CardList::iterator it = bob.begin(); it != bob.end(); ++it) {
     std::cout << *it << std::endl;
   }
-  std::cout << std::endl;
 
   return 0;
 }
