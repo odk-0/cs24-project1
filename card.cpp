@@ -17,7 +17,10 @@ char Card::getRank() const { return rank; }
 
 // Print to a stream (simple default format)
 void Card::print(std::ostream &os) const {
-	os << suit << " " << rank;   
+	// print rank 't' as "10" for human-readable output
+	os << suit << " ";
+	if (rank == 't') os << "10";
+	else os << rank;
 }
 
 // Operators
